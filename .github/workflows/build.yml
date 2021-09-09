@@ -18,3 +18,9 @@ jobs:
             registry: docker.io
             repository: teddyjacono/cd
             tag_with_sha: true
+        - uses: sburris/dependency-check-action@master
+          with:
+            Project-Name: TestApp
+               required: true
+
+
